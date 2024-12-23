@@ -1,4 +1,6 @@
-attribute vec4 aVertexPosition;
-void main(void){
-  gl_Position = aVertexPosition;
+attribute vec4 aPosition;
+
+void main() {
+  // Pass the position directly to the screen
+  gl_Position = vec4(aPosition);
 }
